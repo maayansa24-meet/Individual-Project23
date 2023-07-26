@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Azz.com - Products</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style2.css">
 </head>
 <body>
+    <form>
     <header>
         <h1>Explore Our Products</h1>
         <p>Find Your Passionate Style</p>
-        <a href="/cart">View Cart</a>
+        
     </header>
 
     <main>
@@ -17,7 +18,8 @@
         <!-- Your content for the products page goes here -->
         <nav>
         <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/cart">View Cart</a></li>
         </ul>
     </nav>
 
@@ -38,7 +40,7 @@
                                     <h3>Product 1</h3>
                                     <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     <span>$49.99</span>
-                                    <button>Add to Cart</button>
+                                    <button onclick="window.location.href='add_to_cart">Add to Cart</button>
                                 </div>
                             </div>
 
@@ -49,7 +51,7 @@
                                     <h3>Product 2</h3>
                                     <p>Description of Product 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     <span>$39.99</span>
-                                    <button>Add to Cart</button>
+                                    
                                 </div>
                             </div>
 
@@ -118,15 +120,13 @@
     </section>
 
 
-</body>
-</html>
+
 
     <!-- Add the Bootstrap JavaScript files -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+
     </main>
 
     <footer>
@@ -135,6 +135,7 @@
     </footer>
 
     <script src="script.js"></script>
+    </form>
 </body>
 </html>
 

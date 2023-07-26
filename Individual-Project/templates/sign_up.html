@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Azz.com - Sign Up</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style2.css">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
 
     <main>
         <!-- Your content for the sign-up page goes here -->
-         <form method="post" action="/signup">
+         <form method="POST" action="/">
         <!-- Heading -->
         <h4>
             Create an account
@@ -32,6 +32,14 @@
             </div>
         </div>
 
+         <div>
+            <label>User name</label>
+            <div>
+                <input type="text"  name="userName" required>
+            </div>
+        </div>
+
+
         <!-- Password -->
         <div>
             <label>Password*</label>
@@ -46,7 +54,7 @@
         </div>
     </form>
     <br>
-    <a href="/"><button>signin</button></a>
+    <a href="/signin"><button>signin</button></a>
     </main>
 
     <footer>
