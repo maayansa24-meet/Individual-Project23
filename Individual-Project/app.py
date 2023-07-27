@@ -56,8 +56,8 @@ def signin():
    return render_template("sign_in.html")
 @app.route('/home')
 def home():
-    uName = db.child('Users').child('user').child('name').get().val()
-    return render_template('home.html', uName = uName)
+    uName = db.child('Users').child(login_session['user']['localId']).get().val()
+    return render_template('home.html', uName = uName['name'])
 @app.route('/products')
 def products():
     return render_template('products.html')
